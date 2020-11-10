@@ -14,7 +14,6 @@ rm -rf /var/cache/yum
 yum clean all
 
 # LOAD GNU 7.3.1
-
 # General environment variables
 export PATH=/opt/rh/devtoolset-7/root/usr/bin${PATH:+:${PATH}}
 export MANPATH=/opt/rh/devtoolset-7/root/usr/share/man:${MANPATH}
