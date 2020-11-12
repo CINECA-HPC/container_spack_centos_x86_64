@@ -4,11 +4,14 @@ IncludeCmd: yes
 
 %post
 
-yum -y install binutils
-yum -y install dapl dapl-utils ibacm infiniband-diags libibverbs libibverbs-devel libibverbs-utils libmlx4 librdmacm librdmacm-utils mstflint opensm-libs perftest qperf rdma
-yum -y install scl-utils
-yum -y install centos-release-scl
-yum -y install devtoolset-7-toolchain
+yum install -y epel-release
+yum groupinstall -y "Development tools"
+yum install -y python36 python3-pip python3-devel bzip2 gzip tar zip unzip xz curl wget vim patch make cmake file git which gcc-c++ perl-Data-Dumper
+yum install -y perl-Thread-Queue boost-devel openssl libibverbs-devel rdma-core-devel openssl-devel binutils dapl dapl-utils ibacm infiniband-diags
+yum install -y libibverbs libibverbs-utils libmlx4 librdmacm librdmacm-utils mstflint opensm-libs perftest qperf rdma libjpeg-turbo-devel libpng-devel
+yum install -y openssh-clients openssh-server subversion libffi libffi-devel scl-utils libpsm2 libpsm2-devel pmix pmix-devel centos-release-scl
+yum install -y devtoolset-7-toolchain
+
 
 rm -rf /var/cache/yum 
 yum clean all
