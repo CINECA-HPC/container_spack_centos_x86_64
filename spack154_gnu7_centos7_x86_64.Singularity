@@ -10,7 +10,7 @@ yum install -y python36 python3-pip python3-devel bzip2 gzip tar zip unzip xz cu
 yum install -y perl-Thread-Queue boost-devel openssl libibverbs-devel rdma-core-devel openssl-devel binutils dapl dapl-utils ibacm infiniband-diags
 yum install -y libibverbs libibverbs-utils libmlx4 librdmacm librdmacm-utils mstflint opensm-libs perftest qperf rdma libjpeg-turbo-devel libpng-devel
 yum install -y openssh-clients openssh-server subversion libffi libffi-devel scl-utils libpsm2 libpsm2-devel pmix pmix-devel centos-release-scl
-yum install -y devtoolset-7-toolchain
+yum install -y devtoolset-7-toolchain Lmod
 
 
 rm -rf /var/cache/yum 
