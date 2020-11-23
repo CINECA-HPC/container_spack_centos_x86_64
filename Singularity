@@ -12,7 +12,6 @@ yum install -y libibverbs libibverbs-utils libmlx4 librdmacm librdmacm-utils mst
 yum install -y openssh-clients openssh-server subversion libffi libffi-devel scl-utils libpsm2 libpsm2-devel pmix pmix-devel centos-release-scl
 yum install -y devtoolset-7-toolchain Lmod
 
-
 rm -rf /var/cache/yum 
 yum clean all
 
