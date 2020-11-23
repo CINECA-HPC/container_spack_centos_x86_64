@@ -2,6 +2,10 @@ Bootstrap: docker
 From: spack/centos7:0.15.4
 IncludeCmd: yes
 
+# IMPORTANT: When you are going to work inside the container remember to source these 2 file in order to set the proper module environment with spack and Lmod
+# source /opt/spack/share/spack/setup-env.sh && source /usr/share/lmod/8.2.7/init/sh
+
+
 %post
 
 yum install -y epel-release
