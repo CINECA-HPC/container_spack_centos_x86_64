@@ -9,8 +9,7 @@ ENV DOCKERFILE_BASE=centos            \
     CURRENTLY_BUILDING_DOCKER_IMAGE=1 \
     container=docker
 
-RUN dnf repolist all
-# dnf update -y \
+
 
 RUN dnf install -y epel-release \
  && dnf install -y 'dnf-command(config-manager)' \
