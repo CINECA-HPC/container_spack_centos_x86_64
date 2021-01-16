@@ -37,6 +37,8 @@ export PYTHONPATH=/opt/rh/devtoolset-7/root/usr/lib64/python$pythonvers/site-pac
 
 gcc --version
 
+spack install openmpi@4.0.2 %gcc@7.3.0 fabrics=psm2,verbs,ofi +pmi +legacylaunchers schedulers=slurm ^python@3.6.4
+
 %environment
 
 # General environment variables
