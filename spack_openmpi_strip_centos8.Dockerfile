@@ -29,7 +29,7 @@ RUN cd /opt/spack-environment && \
 
 
 # Bare OS image to run the installed executables
-FROM centos:8.2.2004
+FROM cinecahpc/container_spack_centos_x86_64:latest
 
 COPY --from=builder /opt/spack-environment /opt/spack-environment
 COPY --from=builder /opt/software /opt/software
