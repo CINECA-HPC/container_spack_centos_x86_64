@@ -26,7 +26,11 @@ dnf --enablerepo epel install -y \
         patch \
         tcl \
         unzip \
-        which 
+        which \
+        make \
+        zlib-devel \
+        m4 \
+        wget
 
 dnf install -y python36
 
